@@ -1,0 +1,310 @@
+
+
+\documentclass[12pt]{report}
+\usepackage[a4paper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+%\usepackage{fourier}
+\usepackage{refcount}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[autostyle]{csquotes}
+\usepackage{indentfirst}
+\setlength{\parindent}{1.5cm}
+
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{judicialpolitics-1-1.bib}
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{Police Brutality and Protest}
+\fancyfoot[R]{\thepage\ }
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\title{ \normalsize \textsc{Final Project}
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+	    \textbf{\uppercase{Police Brutality and Protest: \\ Evidence from the Black Lives Matter Movement}}
+		\HRule{2pt} \\ [0.5cm]
+		 \vspace*{5\baselineskip}}
+
+\date{Summer 2018}
+
+\author{
+Luzmarina Garcia (lgarcia8) \\ Sai Kanuru (skanuru2) \\ Shangze Wu (shangze2)}
+
+\maketitle
+\tableofcontents
+
+
+\newpage
+
+%-------------------------------------------------------------------------------
+% Section title formatting
+\sectionfont{\scshape}
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% BODY
+%-------------------------------------------------------------------------------
+\section*{Research Questions}
+What demographic factors influence police brutality?
+Do police-caused deaths spatially predict protest activity? 
+
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}  
+
+From 2015 to mid-2016 almost half of the victims of police shootings in the US were white while black individuals made up 24\% of victims. However, white people make up 62\% of the American population while black people make up only 13\% of the US population (Wesley 2016). Of these black victims, 32\% were unarmed when they were killed. After adjusting for population percentage, black Americans are two and a half times more likely than white Americans to be shot and killed by police officers (Tedeneke 2016).
+
+The Black Lives Matter movement (BLM) was born in 2013, after the man who shot and killed an unarmed black teenager, Trayvon Martin, was cleared of his murder. A Californian activist, Alicia Garza, responded to the jury’s decision on Facebook with a post that ended: “Black people. I love you. I love us. Our lives matter.” The hashtag was born, and continued to grow in prominence with each new incident and protest (Tedeneke 2016).
+
+The formal organization that sprung from the protests started with the goal of highlighting the disproportionate number of incidences in which a police officer killed a member of the black community, but it soon gained international recognition, after the death of Michael Brown in Missouri a year later. BLM now describes itself as a “chapter-based national organization working for the validity of black life” (Black Lives Matter 2018). While it grew from protest against police killings of black people in the United States, this new wave of activism has spurred scholars to highlight a failure in social science to fully explore the consequences of state repression in the US and how it affects the health of our democracy. 
+
+The need for this analysis arises from the US government's lack of comprehensive records of the number of people killed by law enforcement. This absence of basic data has been glaring amid the protests, riots and worldwide debate given salience by the fatal police shooting of Michael Brown, an unarmed 18-year-old, in Ferguson, Missouri, in August 2014 and continued by the Black Lives Matter movement. Accounting for these fatalities is a prerequisite for an informed public discussion about the use of force by police while the formation and continuation of protest to confront police brutality and the structural causes that underpin it.
+
+
+\section*{Related Work} 
+\addcontentsline{toc}{section}{Related Work} 
+Research on police use of coercive mechanisms of social control against racial/ethnic minority populations are guided by three structural hypotheses (Smith \& Holmes, 2014). The minority threat hypothesis posits that "the greater the proportion of minority residents in a city, the greater the use of coercive crime control mechanisms" while the place hypothesis argues that "spatially segregated minority populations are the primary targets of coercive control" (83). Third, the community accountability hypothesis that maintains that "organizational characteristics of police departments promote the use of excessive force against minorities" (83). By combining data from several sources for cities with populations of 100,000 or more, Smith and Holmes (2014) examine which of these theories best explains the link between race/ethnicity and excessive force. They provide support for the minority threat hypothesis but indicate that place effects are contingent on the existence of a very high degree of racial/ethnic segregation while finding little support for the community accountability hypothesis. Their findings suggest findings clearly suggest that patterns of police excessive force mirror the political and social divisions of the larger society.
+
+Political and social discontent only occasionally results in public protest, in part because mass protest faces a substantial collective action problem. There is a substantial amount of research in the social sciences that seeks to identify the contexts in which larger, more frequent, and more organized protests occur. In examining the potential relationship between police violence and BLM protests, we also account for the economic, social, and political context of protests. 
+
+Previous studies show that BLM protests are more common in locations where police have previously killed more Black people per capita (Williamson 2018). This finding is consistent with predictions drawn from an older school of social movement analysis that suggest that the level of protest behavior observed in a community would respond to the level of grievance a community was facing, confirming that the frequency of BLM protests is predicted by variables specified in well-established theories of protest emergence such as both resource mobilization theory and political opportunity theory (Williamson, Trump, and Einstein 2018). Our study utilizes updated data collection and the technologically intensive and reliable data methods of the Cline center to ascertain if these findings hold and if the spatial analysis can provide any interesting patterns in the dispersion and frequency of protests. Spatial analysis has been used to understand police brutality nationwide, but not how it has been responded to, namely by the BLM movement.
+
+Given this work, our predictions are that a majority of police related deaths happened where the victim had minority status and other correlates such as unemployment and poverty are high. Moreover, localities can respond to the most extreme aspects of the carceral state with increased political engagement. One might expect that communities that have experienced more frequent deaths at the hands of police might be especially unlikely to take the risk of public protest. Instead, we believe that we will find evidence of heightened mobilization since the salience of police brutality locally may serve to galvanize individuals. We also expect to find a number of solidarity protests across the country where the police brutality locally is not high, but a BLM protest still results because of other variables such as high number of black residents or high educational attainment of residents. 
+
+\section*{Research Design} 
+\addcontentsline{toc}{section}{Research Design} 
+To examine the contexts in which Black Lives Matter protests occurred, we will utilize two datasets with indicators of BLM protests, including their size and location, police brutality statistics and demographic profiles of residents. The first dataset is compiled by the Cline Center for Advanced Social research and collects all reports of BLM protests from major American outlets (Cline Center 2018). The second contains the data collected by fivethirtyeight.com (2018)  for the piece \textit{Where Police Have Killed Americans In 2015} by Ben Casselman (2016). Descriptive statistics for the police brutality and BLM protest datasets are included as tables 1 and 2, respectively, in the appendix. Given the time frame from the beginning of BLM and the salience it was given in 2015, we focus on this year for our project.
+
+Methods will include statistical analysis of event data and spatial analysis.
+We include demographic and regional indicators, in part to confirm whether patterns of BLM protests are successfully predicted by such variables, and in part to improve interpretation of any relationship that we find between police killings and protest activity. 
+ 
+ \section*{Findings} 
+ \addcontentsline{toc}{section}{Findings} 
+ 
+ Figure 1 establishes whether a black victim was a minority in the area where the incident took place. Considering there are three major ethnic groups in the United States (White, Black and Hispanic), any ethnic group that comprises less than 33.33 \% of the population in an area should be considered a minority. Therefore, I added the red line on the plot at 33.33 with the area to the left signifying that black people were a minority in the area where the incident occurred.  In addition, the blue vertical line was added to illustrate the national percent of black people in the population (Statista 2015). The plot illustrates that a large proportion of the incident took place in areas where a black victim was in the minority.
+ 
+Figures 2 and 3 display the ethnicity of the victims. Figure 2 further breaks it down by distinguishing whether the victim was armed. Alternatively, Figure 3 differentiates between ethnicities by magnifying into unarmed victims only. While whites outnumber blacks 6 to 1 nationally, Figure 2 shows that white victims don’t even count for twice the number of black victims. Figure 3 points out that white unarmed victims count for only 1.5 times the number of black unarmed victims.
+
+Figure 4 illustrates the unemployment rate of the area where the incident took place. The horizontal blue line on the plot depicts the national unemployment rate in 2015 (Statista 2015). The number of incidents which took place in areas of high unemployment far outweigh the number of incidents which took place in areas of low unemployment.
+Figure 5 illustrates the poverty rate of the area where the incident took place. The horizontal blue line on the plot depicts the national poverty rate in 2015 (Statista 2015). The number of incidents which took place in areas of high poverty far outweigh the number of incidents which took place in areas of low poverty.
+
+Figure 6 illustrates the percent of college graduates in the area where the incident took place. The horizontal blue line on the plot depicts the national average of percentage of college graduates in 2015 (Statista 2015). The number of incidents which took place in areas of low education levels far outweigh the number of incidents which took place in areas where a majority of the people are college graduates.
+
+Figure 7 illustrates the average household income in the area where the incident took place. The horizontal blue line on the plot depicts the national mean household income in 2015 (Frankel 2016). The number of incidents which took place in areas of low income far outweigh the number of incidents which took place in areas of high income.
+
+The maps displayed in the shiny application depict the coordinates of police related deaths and the protest events associated with Black Lives Matter in the US during 2015. Comparing the maps displays how the majority of the events in large population areas. Moreover, the protest events happen overwhelmingly at the coasts of the US. These interactive maps are innovative ways that individuals can visualize abuse of power and responses. 
+
+An OLS regression and probit considering the factors that could influence police related deaths and black victims of police brutality is included (Table 3). Although we do not feel strongly about the explanatory power of these models given the adjusted R\^2 , AIC, and log likelihood, we feel it provides support to how difficult it is to ascertain the correct measurements for the research questions.
+
+
+\section*{Feasibility}
+ \addcontentsline{toc}{section}{Feasibility} 
+Our expectation was that this project would be completed by the end of the course. We successfully met this goal. The project consisted of statistical analysis, spatial analysis, and visualization of the data. These duties were distributed among the group's members, while the research and editing were performed by members as needed. Figure 10 outlines the duties of the group's three members. 
+
+Moreover, since these data are observational, there are several issues affecting the feasibility of answering our research questions. We are unable to establish causality, and the locality-level nature of our measurements also rules out an exploration of detailed individual-level mechanisms that may explain patterns of behavior that we may uncover. 
+
+ We have to also consider distortion of the data, for various reasons. Firstly, some data is collected through the voluntary collaboration of police departments with the Federal Bureau of Investigation. Also, police departments don’t always identify a shooting if an officer has been involved. Additionally, police-involved shootings that are under investigation are only counted once the investigation has concluded, so many recent incidents are not being counted. In our study, we will use the data collected by Washington Post to inform our key independent variable of police killings in an area, the Cline Center data will be used for the dependent variable and spatial analysis, and the American Community Survey will provide indicators that will be part of the controls. What this means is that we may not conclusively produce answers to our questions, but provide a discussion on associated factors. 
+
+
+ 
+
+\section*{Discussion and Conclusion}
+ \addcontentsline{toc}{section}{Discussion and Conclusion} 
+
+This project sought to point to the demographic factors that influence police brutality in the US. Moreover, we hoped to map police-caused deaths and BLM protest activity to understand if the police brutality was spatially associated to demonstrations. We utilized two data sets and created an interactive shiny application that included our data visualization, spatial analysis, and statistical analysis. Several demographic factors that were key in our comparisons unemployment and poverty rate at the census tract level, household income, and education (percent of tract that graduated college). Our plots show how the majority of police related deaths occurred when the area had high unemployment and poverty, and/or low household income and education. Moreover, the majority of black victims were in the minority in the area where they were killed. Our spatial analysis proved that comparing the maps of police brutality and BLM protests displays how the majority of the events occur in large population areas. Moreover, they happen overwhelmingly at the coasts of the US. However, we do not feel that this is not because on one reason, but rather the intersection of many of the demographic factors and other unobservables not controlled for in this study. These interactive maps are innovative ways that individuals can visualize abuse of power and responses in their own areas. 
+
+While better understanding the emergence of the Black Lives Matter movement is in and of itself important given the movement’s political and social salience, our study will also help point towards a broader understanding of when protest activity might emerge in the context of state repression. The political correlates and consequences of state repression in the United States also remains undertheorized. We hope this helped shine light on how the state’s coercive power affects our democracy.
+
+
+
+\newpage
+
+\section*{Appendix}
+ \addcontentsline{toc}{section}{Appendix} 
+ 
+ 
+ \begin{figure}[!ht]
+ \caption{}
+	\includegraphics[width=0.8\textwidth]{blackminorityvictims.PNG}
+\end{figure}
+ 
+ \begin{figure}[!ht]
+\caption{}
+	\includegraphics[width=0.8\textwidth]{nokillbyeth.PNG}
+\end{figure}
+
+ \begin{figure}[!ht]
+\caption{}
+	\includegraphics[width=0.8\textwidth]{ethkillunarmed.PNG}
+\end{figure}
+
+ \begin{figure}[!ht]
+\caption{}
+	\includegraphics[width=0.8\textwidth]{unempratpolkill.PNG}
+\end{figure}
+
+ \begin{figure}[!ht]
+\caption{}
+	\includegraphics[width=0.8\textwidth]{povratepolkill.PNG}
+\end{figure}
+
+ \begin{figure}[!ht]
+\caption{}
+	\includegraphics[width=0.8\textwidth]{collegegradspolicekillarea.PNG}
+\end{figure}
+
+ \begin{figure}[!ht]
+\caption{}
+	\includegraphics[width=0.8\textwidth]{avghousepolkill.png}
+\end{figure}
+
+\begin{figure}[!ht]
+\caption{}
+	\includegraphics[width=0.8\textwidth]{Police_brutalitymap.png}
+
+\end{figure}
+
+ 
+ \begin{figure}[!ht]
+\caption{}
+	\includegraphics[width=0.8\textwidth]{blmmap.png}
+
+\end{figure}
+
+\begin{figure}[!ht]
+\caption{Workflow of Randomly Assigned Group 2}
+	\includegraphics[width=0.8\textwidth]{GanttChart.PNG}
+
+\end{figure}
+ 
+ \begin{table}[!htbp] \centering 
+  \caption{Descriptive Statistics: Police Brutality Dataset (at the Census Tract Level)} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & count & \%white & \% black & \% hispanic & house income & poverty & unemp. & \% BA \\ 
+\hline \\[-1.8ex] 
+N & 467 &  465 & 465 & 465 & 465 & 465 & 465 & 465 \\ 
+Mean & 234.00 & 51.92 & 17.94 & 22 & 46,627.18 & 21.11 & 11.74 & 22.02 \\ 
+St. Dev. & 134.96 & 30.0 & 24.89 & 24.58 & 20,511.19 & 13.22 & 6.92 & 15.84 \\  
+Min & 1 & 0.0 & 0.0 & 0.0 & 10,290.0 & 1.1 & 1.13 & 1.36 \\ 
+Pctl(25) & 117.5 & 26.2 & 1.4 & 3.5 & 32,625.0 & 10.90 & 6.89 & 10.62 \\ 
+Pctl(75) & 350.5 & 77.500 & 23.700 & 32.900 & 56,190.000 & 28.700 & 14.083 & 28.454 \\ 
+Max & 467 & 99.60 & 99.80 & 98.8 & 142,500.0 & 79.200 & 50.76 & 82.81 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+ 
+\begin{table}[!htbp] \centering 
+  \caption{Descriptive Statistics: Black Lives Matter Protest Dataset} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & latitude & longitude & pubDay & pubMonth & pubYear & articleWordCount \\ 
+\hline \\[-1.8ex] 
+N & 1,970 & 1,970 & 1,970 & 1,970 & 1,970 & 1,970 \\ 
+Mean & 40.041 & $-$90.793 & 16.695 & 6.692 & 2,015.096 & 961.844 \\ 
+St. Dev. & 4.417 & 13.711 & 8.588 & 3.382 & 0.295 & 781.013 \\ 
+Min & 0.000 & $-$123.468 & 1 & 0 & 2,015 & 1 \\ 
+Pctl(25) & 38.744 & $-$93.264 & 10 & 4 & 2,015 & 539.2 \\ 
+Pctl(75) & 43.073 & $-$81.009 & 24 & 10 & 2,015 & 1,126 \\ 
+Max & 48.760 & 0.000 & 31 & 11 & 2,016 & 7,650 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+
+\newpage
+\begin{table}[!htbp] \centering 
+  \caption{Regression Results} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{2}{c}{Police Related Deaths} & Black Victim \\ 
+\\[-1.8ex] & \multicolumn{2}{c}{\textit{OLS}} & \textit{probit} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ Police Related Deaths &  &  & $-$0.0001 \\ 
+  &  &  & (0.0005) \\ 
+  & & & \\ 
+ poverty rate & $-$0.286 & 0.582 & 0.017$^{**}$ \\ 
+  & (0.589) & (0.790) & (0.008) \\ 
+  & & & \\ 
+ unemployment rate & $-$0.552 & $-$0.539 & 0.045$^{***}$ \\ 
+  & (1.125) & (1.166) & (0.012) \\ 
+  & & & \\ 
+ \% college grads &  & $-$0.388 & 0.015$^{***}$ \\ 
+  &  & (0.551) & (0.006) \\ 
+  & & & \\ 
+ household income &  & 0.001$^{*}$ & 0.00000 \\ 
+  &  & (0.001) & (0.00001) \\ 
+  & & & \\ 
+ Constant & 246.322$^{***}$ & 193.178$^{***}$ & $-$1.835$^{***}$ \\ 
+  & (13.193) & (36.673) & (0.389) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Observations & 465 & 465 & 465 \\ 
+Adjusted R$^{2}$ & $-$0.002 & $-$0.0001 &  \\ 
+Log Likelihood &  &  & $-$257.396 \\ 
+Akaike Inf. Crit. &  &  & 526.792 \\ 
+Residual Std. Error & 135.179 (df = 462) & 135.063 (df = 460) &  \\ 
+F Statistic & 0.584 (df = 2; 462) & 0.990 (df = 4; 460) &  \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+
+\newpage
+
+ \addcontentsline{toc}{section}{References}  
+ \begin{figure}[t!]
+
+	\includegraphics[width=0.8\textwidth]{references1.PNG}
+\end{figure}
+
+ \begin{figure}[t!]
+
+	\includegraphics[width=0.8\textwidth]{references2.PNG}
+\end{figure}
+ \begin{figure}[t!]
+
+	\includegraphics[width=0.8\textwidth]{references3.PNG}
+\end{figure}
+
+
+\end{document}
+
+
+
+
